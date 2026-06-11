@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import { FaHandshake, FaShieldAlt, FaLaptopCode, FaUserTie } from "react-icons/fa";
 
@@ -34,17 +33,17 @@ const steps = [
 
 const HowWeWork = () => {
   return (
-    <section className="bg-[#EFF1F3] py-[38px]">
+    <section className="bg-[#EFF1F3] py-12 sm:py-[38px]">
       <div className="max-w-[1180px] mx-auto px-5">
         <h2 className="text-center text-[26px] font-medium text-[#111] mb-[32px]">
           How We Work
         </h2>
 
-        <div className="relative flex items-start justify-between">
+        <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:flex lg:items-start lg:justify-between gap-8 sm:gap-10 lg:gap-0">
           {steps.map((item, index) => (
             <React.Fragment key={index}>
-              <div className="relative w-[210px] text-center">
-                <span className="absolute top-[-2px] left-[32px] text-[12px] text-black">
+              <div className="relative w-full lg:w-[210px] text-center">
+                <span className="absolute top-[-2px] left-[calc(50%-45px)] lg:left-[32px] text-[12px] text-black">
                   {item.number}
                 </span>
 
@@ -67,7 +66,7 @@ const HowWeWork = () => {
                 <img
                   src={index === 1 ? upLine : downLine}
                   alt=""
-                  className="w-[112px] h-auto mt-[34px] object-contain"
+                  className="hidden lg:block w-[112px] h-auto mt-[34px] object-contain"
                 />
               )}
             </React.Fragment>

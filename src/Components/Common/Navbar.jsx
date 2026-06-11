@@ -13,16 +13,16 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed top-4 left-0 w-full z-50 px-4">
+    <header className="fixed top-3 sm:top-4 left-0 w-full z-50 px-3 sm:px-4">
       <div className="max-w-7xl mx-auto">
         <nav
           className="
             flex items-center justify-between
             bg-white/10 backdrop-blur-xl
             border border-white/20
-            rounded-full
+            rounded-2xl sm:rounded-full
             px-4 md:px-8
-            py-3
+            py-2.5 sm:py-3
             shadow-lg
           "
         >
@@ -31,7 +31,7 @@ const Navbar = () => {
             <img
               src={logo}
               alt="Logo"
-              className="h-12 w-auto object-contain"
+              className="h-10 sm:h-12 w-auto object-contain"
             />
           </Link>
 
@@ -39,21 +39,21 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center gap-10">
             <Link
               to="/"
-              className="text-white font-medium hover:text-violet-300 transition"
+              className="text-black font-medium hover:text-violet-300 transition"
             >
               Home
             </Link>
 
             <Link
               to="/about"
-              className="text-white font-medium hover:text-violet-300 transition"
+              className="text-black font-medium hover:text-violet-300 transition"
             >
               About Us
             </Link>
 
             {/* Services Dropdown */}
             <div className="relative group">
-              <button className="flex items-center gap-1 text-white font-medium hover:text-violet-300 transition">
+              <button className="flex items-center gap-1 text-black font-medium hover:text-violet-300 transition">
                 Services
                 <FiChevronDown />
               </button>
@@ -103,14 +103,14 @@ const Navbar = () => {
 
             <Link
               to="/blog"
-              className="text-white font-medium hover:text-violet-300 transition"
+              className="text-black font-medium hover:text-violet-300 transition"
             >
               Blog
             </Link>
 
             <Link
               to="/contact"
-              className="text-white font-medium hover:text-violet-300 transition"
+              className="text-black font-medium hover:text-violet-300 transition"
             >
               Contact
             </Link>
@@ -139,7 +139,9 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenu(!mobileMenu)}
-            className="lg:hidden text-white text-2xl"
+            className="lg:hidden text-[#161616] text-2xl"
+            aria-label={mobileMenu ? "Close menu" : "Open menu"}
+            aria-expanded={mobileMenu}
           >
             {mobileMenu ? <FiX /> : <FiMenu />}
           </button>
@@ -152,7 +154,9 @@ const Navbar = () => {
               lg:hidden mt-3
               bg-black/90 backdrop-blur-xl
               rounded-3xl
-              p-6
+              p-5 sm:p-6
+              max-h-[calc(100vh-110px)]
+              overflow-y-auto
             "
           >
             <div className="flex flex-col gap-5 text-white">

@@ -36,10 +36,10 @@ const services = [
 
 const OurServices = () => {
   return (
-    <section className="bg-[#EFF1F3] py-[55px] md:py-[42px]">
+    <section className="bg-[#EFF1F3] py-14 md:py-[42px]">
       <div className="max-w-[1080px] mx-auto px-5">
         {/* Top Content */}
-        <div className="w-full md:w-[390px] mb-[30px] md:mb-[34px]">
+        <div className="w-full max-w-[430px] mb-[30px] md:mb-[34px]">
           <span className="inline-flex items-center px-[13px] py-[4px] rounded-full bg-[#E8DEFF] text-[#7B55FF] text-[11px] font-semibold">
             Our Services
           </span>
@@ -56,11 +56,11 @@ const OurServices = () => {
         </div>
 
         {/* Cards */}
-        <div className="flex flex-col md:flex-row gap-[18px] items-start">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[18px]">
           {services.map((item, index) => (
             <div
               key={index}
-              className={`w-full md:w-[250px] h-auto md:h-[286px] rounded-[13px] overflow-hidden flex flex-col ${
+              className={`w-full min-h-[286px] rounded-[13px] overflow-hidden flex flex-col ${
                 item.dark
                   ? "bg-[#1c1c1c] text-white"
                   : "bg-[#e9e0ff] text-[#171717]"
@@ -91,7 +91,7 @@ const OurServices = () => {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-[180px] md:h-[126px] object-cover rounded-[10px]"
+                  className="w-full h-[170px] sm:h-[150px] lg:h-[126px] object-cover rounded-[10px]"
                 />
               </div>
             </div>

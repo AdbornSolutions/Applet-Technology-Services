@@ -7,28 +7,28 @@ const testimonials = [
     name: "Rahul Sharma",
     role: "Business Owner",
     text: "The team delivered our website exactly as we envisioned. Their professionalism, communication, and attention to detail made the entire process smooth and stress-free.",
-    rating: "★★★★★",
+    rating: "5/5",
     image: "https://i.pravatar.cc/80?img=12",
   },
   {
     name: "Priya Mehta",
     role: "Startup Founder",
     text: "They helped us build a clean and modern digital presence. The support was quick, friendly, and very professional throughout the project.",
-    rating: "★★★★★",
+    rating: "5/5",
     image: "https://i.pravatar.cc/80?img=47",
   },
   {
     name: "Amit Verma",
     role: "Marketing Head",
     text: "Our business leads improved after working with them. Their digital strategy and execution were practical, clear, and result-focused.",
-    rating: "★★★★★",
+    rating: "5/5",
     image: "https://i.pravatar.cc/80?img=33",
   },
   {
     name: "Neha Kapoor",
     role: "Business Consultant",
     text: "Excellent service and timely delivery. They understood our requirements properly and created a solution that matched our brand perfectly.",
-    rating: "★★★★★",
+    rating: "5/5",
     image: "https://i.pravatar.cc/80?img=25",
   },
 ];
@@ -48,15 +48,13 @@ const Testimonials = () => {
 
   return (
     <section
-      className="relative bg-cover bg-[#EFF1F3] bg-center bg-no-repeat py-[220px] overflow-hidden"
+      className="relative bg-cover bg-[#EFF1F3] bg-center bg-no-repeat py-16 sm:py-24 lg:py-[220px] overflow-hidden"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className="max-w-[1080px] mx-auto px-5">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-[80px]">
-          
-          {/* Left Testimonial Card */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-[80px]">
           <div className="relative w-full flex justify-center lg:justify-start">
-            <div className="relative w-[410px] h-[360px] border-[10px] border-[#c5b6ff] bg-[#f4f6f8] px-[42px] pt-[118px] pb-[35px]">
+            <div className="relative w-full max-w-[410px] min-h-[320px] sm:min-h-[360px] border-[8px] sm:border-[10px] border-[#c5b6ff] bg-[#f4f6f8] px-6 sm:px-[42px] pt-16 sm:pt-[118px] pb-8 sm:pb-[35px]">
               <div className="text-[#ffbb00] text-[14px] tracking-[2px] mb-[18px]">
                 {item.rating}
               </div>
@@ -82,8 +80,7 @@ const Testimonials = () => {
             </div>
           </div>
 
-          {/* Right Content */}
-          <div className="max-w-[430px]">
+          <div className="max-w-[430px] text-center lg:text-left mx-auto lg:mx-0">
             <span className="inline-flex px-[12px] py-[5px] rounded-full bg-[#c7b8ff] text-[#6b4cff] text-[10px] font-semibold">
               Testimonials
             </span>
@@ -94,7 +91,7 @@ const Testimonials = () => {
 
             <p className="mt-[18px] text-[14px] leading-[20px] text-[#111]">
               We take pride in delivering solutions that help businesses grow,
-              improve efficiency, and achieve their goals. Here’s what our
+              improve efficiency, and achieve their goals. Here's what our
               clients have to say about working with us.
             </p>
 

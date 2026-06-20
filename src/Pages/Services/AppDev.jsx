@@ -1,46 +1,48 @@
 /* eslint-disable no-unused-vars */
 import SubHero from "../../Components/SubHero"
 import Hero from '../../Components/Hero'
-import HeroImage from '../../assets/Service/Shero1.png'
+import HeroImage from '../../assets/Service/Shero2.png'
 import ServiceChoose from '../../Components/ServiceChoose'
 import OurSingleService from '../../Components/OurSingleService'
 import Testimonials from '../../Components/Common/Testimonials'
 import HowWeWork from '../../Components/HowWeWork'
 import {
-  Briefcase,
-  ShoppingCart,
-  Code2,
+  Smartphone,
+  Apple,
+  TabletSmartphone,
   Wand2,
-  Database,
-  HouseWifi,
+  Settings,
+  ArrowRight,
 } from "lucide-react";
-const webServices = [
+
+const mobileServices = [
   {
-    icon: Briefcase,
-    title: "Business Websites",
-    desc: "Professional websites for businesses.",
+    icon: Smartphone,
+    title: "Android App Development",
+    desc: "Custom Android apps optimized for performance, compatibility, and user experience.",
   },
   {
-    icon: ShoppingCart,
-    title: "E-Commerce",
-    desc: "Online stores with payment integration.",
+    icon: Apple,
+    title: "iOS App Development",
+    desc: "Feature-rich iOS apps designed to provide seamless experiences on iPhones and iPads.",
   },
   {
-    icon: Code2,
-    title: "Custom Apps",
-    desc: "Tailored web applications.",
+    icon: TabletSmartphone,
+    title: "Cross-Platform App Development",
+    desc: "Build once and deploy across multiple platforms with Flutter or React Native.",
   },
   {
     icon: Wand2,
-    title: "Website Redesign",
-    desc: "Modern redesign solutions.",
+    title: "App UI/UX Design",
+    desc: "Intuitive designs that focus on user engagement, retention, and brand consistency.",
   },
   {
-    icon: Database,
-    title: "CMS Integration",
-    desc: "WordPress & custom CMS.",
+    icon: Settings,
+    title: "App Maintenance & Support",
+    desc: "Regular updates, performance monitoring, and technical support to keep your app running smoothly.",
   },
 ];
+
 
 const AppDev = () => {
   return (
@@ -48,26 +50,26 @@ const AppDev = () => {
     <SubHero title="App Development" />
     <Hero 
       image={HeroImage}
-      title="Build Cutting-Edge Websites That Scale Your Business"
-      description="Novara Digital Services creates responsive, fast, and high-performing websites to help you reach more customers and maximize online impact."
+      title="Create Powerful Mobile Apps That Engage & Grow Your Business"
+      description="We build user-friendly, high-performance mobile applications for Android, iOS, and cross-platform solutions. Our apps are designed to enhance customer experience, boost engagement, and help your business stay ahead in the mobile-first world."
       /> 
       <ServiceChoose
-      title="Why Choose Our Web Development Services"
+      title="Why Choose Our Mobile App Development Services"
       description="We combine technology, creativity, and expertise to deliver solutions that help businesses succeed in today's competitive digital world. Our focus is on creating reliable, scalable, and results-driven solutions tailored to your business needs."
       features={[
-        "Customized Solutions",
-        "Responsive & Mobile-Friendly",
-        "SEO-Optimized",
+        "Custom App Solutions",
+        "Cross Platform Expertise",
+        "Scalable & Secure",
         "Modern Design & UI/UX",
-        "High Performance" ,
+        "Performance Optimization" ,
       ]}
       />
       <OurSingleService
-      title="Our Web Development Solutions"
-      services={webServices}
-      ctaTitle="Ready to Build?"
-      ctaDescription="Let's create your next website."
-      ctaButtonText="Start Project"
+      title="Our Mobile App Development Solutions"
+      services={mobileServices}
+      ctaTitle="Ready to Innovate?"
+      ctaDescription="Let's create your next mobile app."
+      ctaButtonText="Get Quote"
     />
     <Testimonials />
     <HowWeWork />

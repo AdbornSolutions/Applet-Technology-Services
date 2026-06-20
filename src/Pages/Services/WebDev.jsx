@@ -65,9 +65,9 @@ const WebDev = () => {
       <OurSingleService
       title="Our Web Development Solutions"
       services={webServices}
-      ctaTitle="Ready to Build?"
-      ctaDescription="Let's create your next website."
-      ctaButtonText="Start Project"
+      ctaTitle="Ready to Innovate?"
+      ctaDescription="Let's create your next mobile app."
+      ctaButtonText="Get Quote"
     />
     <Testimonials />
     <HowWeWork />

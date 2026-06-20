@@ -121,8 +121,8 @@ const Footer = () => {
                 47, Kotwal Nagar, Khamla, Nagpur, Maharashtra 440022, India
               </p>
 
-              <p className="text-[12px] uppercase break-words">
-                HR-MANAGER@MYAPPLEsoft.com
+              <p className="text-[12px]  break-words">
+                Hr-Manager@Applettechnologyservices.com
               </p>
             </div>
           </div>

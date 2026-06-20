@@ -9,7 +9,7 @@ const MainHero = () => {
   className="relative min-h-[680px] sm:min-h-screen overflow-hidden"
   style={{
     backgroundImage: `url(${MainHeroBg})`,
-    backgroundSize: "cover",
+    backgroundSize: "auto 120%",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
   }}

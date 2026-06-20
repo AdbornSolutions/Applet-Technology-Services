@@ -55,8 +55,11 @@ const Testimonials = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-[80px]">
           <div className="relative w-full flex justify-center lg:justify-start">
             <div className="relative w-full max-w-[410px] min-h-[320px] sm:min-h-[360px] border-[8px] sm:border-[10px] border-[#c5b6ff] bg-[#f4f6f8] px-6 sm:px-[42px] pt-16 sm:pt-[118px] pb-8 sm:pb-[35px]">
-              <div className="text-[#ffbb00] text-[14px] tracking-[2px] mb-[18px]">
-                {item.rating}
+              <div
+                className="text-[#ffbb00] text-[14px] tracking-[2px] mb-[18px]"
+                aria-label="5 out of 5 stars"
+              >
+                ★★★★★
               </div>
 
               <p className="text-[14px] leading-[19px] text-[#111] mb-[34px]">

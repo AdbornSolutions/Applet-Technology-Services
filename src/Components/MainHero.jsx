@@ -33,7 +33,7 @@ const MainHero = () => {
 
         <p className="max-w-2xl mx-auto mt-6 text-sm md:text-base text-gray-700 leading-relaxed">
           We help businesses grow with modern websites, powerful mobile apps,
-          result-driven digital marketing, and reliable technical support
+          result driven digital marketing, and reliable technical support
           services.
         </p>
 
